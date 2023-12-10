@@ -27,35 +27,32 @@ public class C01_HesapMakinesi {
         System.out.println("yapilacak islemi giriniz ('+' , '-' , '*' , '/')");
         operators = scanner.next();
 
-        double sonuc = 0;
+        double sonuc;
 
-        switch (operators){
-
+        switch (operators) {
             case "+":
-                sonuc = sayi1+sayi2;
+                sonuc = sayi1 + sayi2;
                 break;
             case "-":
-                sonuc = sayi1-sayi2;
+                sonuc = sayi1 - sayi2;
                 break;
             case "*":
-                sonuc = sayi1*sayi2;
+                sonuc = sayi1 * sayi2;
                 break;
             case "/":
-                if (sayi2!=0){
+                if (sayi2 != 0) {
                     sonuc = sayi1 / sayi2;
-                }
-                else {
-                    System.out.println("ifira bılme hatasi");
+                } else {
+                    System.out.println("Sıfıra bölme hatası!");
                     return;
                 }
-                return;
+                break;
             default:
-                System.out.println("gecersiz operator");
+                System.out.println("Geçersiz operatör!");
                 return;
-
         }
-        System.out.println("sonuc : " + sonuc);
 
+        System.out.println("Sonuç: " + sonuc);
     }
 
 
