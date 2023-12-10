@@ -46,11 +46,12 @@ public class C01_HesapMakinesi {
                 }
                 else {
                     System.out.println("ifira bılme hatasi");
+                    return;
                 }
                 return;
             default:
                 System.out.println("gecersiz operator");
-                break;
+                return;
 
         }
         System.out.println("sonuc : " + sonuc);
